@@ -7,12 +7,11 @@ const columns = [
     headerName: 'Blockchain',
     width: 250,
   },
-//   {
-//     field: 'lastName',
-//     headerName: 'Last name',
-//     width: 150,
-//     editable: true,
-//   },
+  {
+    field: 'consensus',
+    headerName: 'Consensus',
+    width: 150,
+  },
 //   {
 //     field: 'age',
 //     headerName: 'Age',
@@ -34,11 +33,11 @@ const columns = [
 ];
 
 const rows = [
-  { id: 1, blockchainName: 'Bitcoin', firstName: 'Jon', age: 35 },
-  { id: 2, blockchainName: 'Ethereum', firstName: 'Cersei', age: 42 },
-  { id: 3, blockchainName: 'Binance Smart Chain', firstName: 'Jaime', age: 45 },
-  { id: 4, blockchainName: 'Solana', firstName: 'Jaime', age: 45 },
-  { id: 5, blockchainName: 'Cardano', firstName: 'Jaime', age: 45 },
+  { id: 1, blockchainName: 'Bitcoin', consensus: 'Proof of Work', age: 35 },
+  { id: 2, blockchainName: 'Ethereum', consensus: 'Proof of Work', age: 42 },
+  { id: 3, blockchainName: 'Binance Smart Chain', consensus: 'Proof of Stake', age: 45 },
+  { id: 4, blockchainName: 'Solana', consensus: 'Proof of Stake', age: 45 },
+  { id: 5, blockchainName: 'Cardano', consensus: 'Proof of Stake', age: 45 },
 ];
 
 export default function DataGridDemo() {
